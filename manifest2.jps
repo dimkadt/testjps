@@ -1,4 +1,4 @@
-jpsType: install
+jpsType: update
 name: test
 baseUrl: https://raw.githubusercontent.com/dimkadt/testjps/main
 
