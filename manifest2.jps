@@ -1,0 +1,14 @@
+jpsType: install
+name: test
+baseUrl: https://raw.githubusercontent.com/dimkadt/testjps/master
+
+nodes:
+  - nodeType: nginxphp
+    count: 1
+    nodeGroup: cp
+
+onAfterClone:
+  install:
+    jps: ${baseUrl}/manifest2.jps?_r=${fn.random}
+    envName: ${event.response.env.envName}
+    nodeGroup: cp
