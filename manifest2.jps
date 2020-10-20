@@ -15,14 +15,14 @@ nodes:
 onInstall:
   - log: Mount Storage
   - api:
-     - method: jelastic.environment.file.AddMountPointByGroup
-       params:
-          nodeGroup: cp
-          sourceNodeId: ${nodes.storage.master.id}
-          sourcePath: /data
-          path: /var/www/webroot/ROOT
-          sourceAddressType: NODE_GROUP
-          protocol: NFS4
+    - method: jelastic.environment.file.AddMountPointByGroup
+      params:
+        nodeGroup: cp
+        sourceNodeId: ${nodes.storage.master.id}
+        sourcePath: /data
+        path: /var/www/webroot/ROOT
+        sourceAddressType: NODE_GROUP
+        protocol: NFS4
   - install: ${baseUrl}/manifest3.jps?_r=${fn.random}
 
 onAfterClone:
