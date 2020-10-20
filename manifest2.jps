@@ -16,7 +16,7 @@ onInstall:
   - log: Mount Storage
   - api:
      - method: jelastic.environment.file.AddMountPointByGroup
-        params:
+       params:
           nodeGroup: cp
           sourceNodeId: ${nodes.storage.master.id}
           sourcePath: /data
