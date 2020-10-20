@@ -1,6 +1,6 @@
 jpsType: install
 name: test
-baseUrl: https://raw.githubusercontent.com/dimkadt/testjps
+baseUrl: https://raw.githubusercontent.com/dimkadt/testjps/master
 
 nodes:
   - nodeType: nginxphp
