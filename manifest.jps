@@ -10,6 +10,7 @@ nodes:
       /var/www/webroot/ROOT:
         sourceNodeGroup: storage
         sourcePath: /data
+        sourceAddressType: NODE_GROUP
   - nodeType: storage
     count: 3
     cluster: true
